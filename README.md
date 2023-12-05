@@ -3,4 +3,4 @@
 |  Version  | Commit Hash | Commit Message |
 | :-------: | :---------: | :------------: |
 | v 1.10.12 |   45433d4   |
-| Version: ..1 (Commit: 1947fbf - ) |
+| v 1.10.13 | a1dfaf5 |
