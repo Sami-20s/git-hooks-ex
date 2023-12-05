@@ -18,8 +18,11 @@ remote_url=$(git config --get remote.origin.url | sed 's/\.git$//')
 # Get the commit date
 commit_date=$(git log -1 --format=%cd --date=format:'%Y-%m-%d %H:%M:%S')
 
+# Get the username of the person who made the commit
+commit_author=$(git log -1 --pretty=format:'%an')
+
 # Create a new line with the incremented version and commit hash
-new_line="| v $new_version | $commit_hash | $commit_message | $remote_url/commit/$commit_hash | $commit_date |"
+new_line="| v $new_version | $commit_author | $commit_hash | $commit_message | $remote_url/commit/$commit_hash | $commit_date |"
 
 # Add a new line with the incremented version and commit hash at the end of the file
 echo "$new_line" >> readme.md
