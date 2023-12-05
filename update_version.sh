@@ -1,8 +1,5 @@
-#!/bin/bash
-
-# Assuming your version is stored in a file named "version.txt"
-version=$(cat version.txt)
-readMe=$(cat README.md)
-echo $readMe
-# Update the version in README.md
-sed "s/Version: [0-9]\+\.[0-9]\+\.[0-9]\+/Version: $version/" README.md > README_tmp.md && mv README_tmp.md README.md
+$currentVersion = (Get-Content "README.md" | Select-String "version: [0-9]+\.[0-9]+\.[0-9]?" -AllMatches).Matches[0].Groups[1].Value
+echo $currentVersion
+# $newVersion = $currentVersion.Split(".")[-1] + 1
+# $newVersion = $currentVersion.Substring(0, $currentVersion.Length - 2) + $newVersion
+# (Get-Content "README.md" -Raw) | Set-Content -Value "version: $newVersion"
