@@ -13,7 +13,7 @@ commit_hash=$(git rev-parse --short HEAD)
 index_number=$(awk '/^Version: [0-9]+\.[0-9]+\.[0-9]+/{print $1}' readme.md | wc -l)
 
 # Increment the index number by 1
-index_number=$((index_number + 1))
+index_number=$((index_number + 2))
 
 # Create a new line with the index number, incremented version, and commit hash
 new_line="$index_number. Version: $new_version (Commit: $commit_hash)"
