@@ -9,8 +9,11 @@ new_version=$(echo $current_version | awk -F. '{print $1"."$2"."$3+1}')
 # Get the commit hash
 commit_hash=$(git rev-parse --short HEAD)
 
+# Get the commit message
+commit_message=$(git log -1 --pretty=%B)
+
 # Create a new line with the incremented version and commit hash
-new_line="| v $new_version | $commit_hash |"
+new_line="| v $new_version | $commit_hash | $commit_message |"
 
 # Add a new line with the incremented version and commit hash at the end of the file
 echo "$new_line" >> readme.md
