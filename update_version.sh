@@ -12,7 +12,7 @@ commit_hash=$(git rev-parse --short HEAD)
 # Get the commit message
 commit_message=$(git log -1 --pretty=%B)
 
-remote_url=$(git config --get remote.origin.url)
+remote_url=$(git config --get remote.origin.url | sed 's/\.git$//')
 
 # Create a new line with the incremented version and commit hash
 new_line="| v $new_version | $commit_hash | $commit_message | $remote_url/commit/$commit_hash"
