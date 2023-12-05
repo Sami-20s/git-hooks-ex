@@ -10,7 +10,7 @@ new_version=$(echo $current_version | awk -F. '{print $1"."$2"."$3+1}')
 commit_hash=$(git rev-parse --short HEAD)
 
 # Create a new line with the incremented version and commit hash
-new_line="| Version: $new_version | (Commit: $commit_hash) |"
+new_line="| $new_version | $commit_hash |"
 
 # Add a new line with the incremented version and commit hash at the end of the file
 echo "$new_line" >> readme.md
