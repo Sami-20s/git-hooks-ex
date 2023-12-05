@@ -11,3 +11,4 @@ Version: 1.10.10 (Commit: 3e5c665)
 Version: 1.10.11 (Commit: 1cefbdf)
 
 
+Version: 1.10.12 (Commit: 0a41de0)
