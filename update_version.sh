@@ -1,9 +1,12 @@
-$content = Get-Content -Path ".\readme.md" -Raw
-if ($content -match 'Version: (\d+)') {
-    $version = [int]$matches[1]
-    $newVersion = $version + 1
-    $content -replace "Version: (\d+)", "Version: $newVersion" | Set-Content -Path ".\readme.md"
-    Write-Host "Version updated to $newVersion"
-} else {
-    Write-Host "Version not found in the readme.md file."
-}
+#!/bin/bash
+
+# Read the current version from the readme.md file
+current_version=$(grep -Eo 'Version: [0-9]+' readme.md | awk '{print $2}')
+
+# Increment the version by 1
+new_version=$((current_version + 1))
+
+# Update the readme.md file with the new version
+sed -i "s/Version: $current_version/Version: $new_version/" readme.md
+
+echo "Version updated to $new_version"

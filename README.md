@@ -1,1 +1,1 @@
-Version: $([int]$matches[1] + 1)
+Version: 2$([int]$matches[1] + 1)
