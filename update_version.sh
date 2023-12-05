@@ -6,7 +6,13 @@ current_version=$(grep -Eo 'Version: [0-9]+\.[0-9]+\.[0-9]+' readme.md | tail -n
 # Increment the last digit of the version by 1
 new_version=$(echo $current_version | awk -F. '{print $1"."$2"."$3+1}')
 
-# Add a new line with the incremented version at the end of the file
-echo "Version: $new_version" >> readme.md
+# Get the commit hash
+commit_hash=$(git rev-parse --short HEAD)
 
-echo "Version updated to $new_version"
+# Create a new line with the incremented version and commit hash
+new_line="Version: $new_version (Commit: $commit_hash)"
+
+# Add a new line with the incremented version and commit hash at the end of the file
+echo "$new_line" >> readme.md
+
+echo "Version updated to $new_version with Commit: $commit_hash"
