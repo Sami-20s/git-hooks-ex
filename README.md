@@ -5,4 +5,6 @@
 -   Version: 1.10.6 (Commit: 0872538)
 -   Version: 1.10.7 (Commit: 2b761d4)
 -   Version: 1.10.8 (Commit: c01952f)
-* Version: 1.10.9 (Commit: 6833a45)
+
+*   Version: 1.10.9 (Commit: 6833a45)
+| Version: 1.10.10 (Commit: 76bc947) |
