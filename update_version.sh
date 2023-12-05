@@ -13,7 +13,7 @@ commit_hash=$(git rev-parse --short HEAD)
 commit_message=$(git log -1 --pretty=%B)
 
 # Create a new line with the incremented version and commit hash
-new_line="| v $new_version (Commit: $commit_hash) | $commit_message |"
+new_line="| v $new_version | $commit_hash | $commit_message |"
 
 # Add a new line with the incremented version and commit hash at the end of the file
 echo "$new_line" >> readme.md
