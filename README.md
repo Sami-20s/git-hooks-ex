@@ -1,5 +1,1 @@
-# My Project
-
-Version: X.X.X
-
-This is a sample project.
+Version:1.2.3

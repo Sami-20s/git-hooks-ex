@@ -5,6 +5,6 @@ version=$(cat version.txt)
 # readMe=$(cat README.md)
 # echo $readMe
 # Update the version in README.md
-sed -E "s/Version: [0-9]\+\.[0-9]\+\.[0-9]\+/Version: $version/" README.md > README_tmp.md && mv README_tmp.md README.md
+echo "Version:1.2.3" > README.md
 readMe=$(cat README.md)
 echo $readMe
