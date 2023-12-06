@@ -32,7 +32,7 @@ echo "Version updated to $new_version with Commit: $commit_hash"
 #!/bin/bash
 
 # Specify the data you want to add to the new row
-data="{value:'wajih'}"
+data="{value='wajih'}"
 
 # Replace <YOUR_SCRIPT_URL> with the URL obtained from deploying the script
 script_url="https://script.google.com/macros/s/AKfycbx6mV8Gt9De0P3DHVpQec_IKgWvpFS_xIO94zF_kInU3dGetzHgpfWi9ocr9qUoPRRl/exec"
