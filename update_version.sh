@@ -38,4 +38,4 @@ data='{"value":"wajih"}'
 script_url="https://script.google.com/macros/s/AKfycbyEp4osUo6zTP_SUqwSWpAJJsE8z4L02O6-ypxua-rOG7N7wfM1BT1ZpSvChGeFFti7/exec"
 
 # Make a POST request to the Google Apps Script web app
-curl  -X POST -d  $data $script_url
+curl  -X POST -d  "data=${data}" $script_url
