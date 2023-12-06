@@ -32,7 +32,7 @@ echo "Version updated to $new_version with Commit: $commit_hash"
 #!/bin/bash
 
 # Specify the data you want to add to the new row
-data="$new_version,$commit_hash,$commit_message,$remote_url/commit/$commit_hash,$commit_date"
+data="$new_version,$commit_author,$commit_hash,$commit_message,$remote_url/commit/$commit_hash,$commit_date"
 
 # Replace <YOUR_SCRIPT_URL> with the URL obtained from deploying the script
 script_url="https://script.google.com/macros/s/AKfycbyhXtOrFKt61Dkotl607c9dOrjQcNciknNZvuTx4Ye9-1PDpjGG6nm315uKTNOUo7ouIg/exec"
