@@ -28,6 +28,7 @@ new_line="| v $new_version | $commit_author | $commit_hash | $commit_message | $
 echo "$new_line" >> readme.md
 
 echo "Version updated to $new_version with Commit: $commit_hash"
-jcurl -X POST \
+
+curl -X POST \
   --data-raw "majd" \
   "https://script.google.com/macros/s/AKfycbyGll5IrzrWwzx11P24Lq6RWxrdo6ij1XyKdakhwRgfKKCDZ6v19zdCQC9ri73qiNJv/exec"
