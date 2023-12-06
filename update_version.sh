@@ -32,10 +32,10 @@ echo "Version updated to $new_version with Commit: $commit_hash"
 #!/bin/bash
 
 # Specify the data you want to add to the new row
-data="value1,value2,value3"
+data="{value:'wajih'}"
 
 # Replace <YOUR_SCRIPT_URL> with the URL obtained from deploying the script
-script_url="https://script.google.com/macros/s/AKfycbx6ZwTO4JLrbR1CqX7jxtnKZyH3NmC6hQTdKMTjGKe1JU03kzobNHle1ggUh3XM1_Zrog/exec"
+script_url="https://script.google.com/macros/s/AKfycbz82JhehEZp3rWa12oOV_niym83ADpLUd8k0OVH6P1_jeabjcmI-JQmIbESl6nwSp5OSQ/exec"
 
 # Make a POST request to the Google Apps Script web app
-curl -L -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "data=${data}" "${script_url}"
+curl -L -X POST -H "Content-Type: application/json" -d "data=${data}" "${script_url}"
