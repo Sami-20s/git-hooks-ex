@@ -35,7 +35,7 @@ echo "Version updated to $new_version with Commit: $commit_hash"
 data="{"version":"$new_version"}"
 
 # Replace <YOUR_SCRIPT_URL> with the URL obtained from deploying the script
-script_url="https://script.google.com/macros/s/AKfycbww2VkI8VCoPLJfoxt0KwCfC0DZFXL-ZN-VKJIGUmwFRBYPYAypB4zqnTRme7Dd2N8cAg/exec"
+script_url="https://script.google.com/macros/s/AKfycbx8PXAKr60vIC1ig9Lr2YGTO9SjtWKyWpGX7jRoAwaJixPlkTpGI4e1A8w0mTTNgXbzfA/exec"
 
 # Make a POST request to the Google Apps Script web app
 curl  -X POST -d  "data=${data}" $script_url
