@@ -22,3 +22,4 @@
 | v 1.10.33 | Sami-20s | b370d5a | fs | https://github.com/Sami-20s/git-hooks-ex/commit/b370d5a | 2023-12-06 16:40:48 |
 | v 1.10.34 | Sami-20s | 23c20ba | fs | https://github.com/Sami-20s/git-hooks-ex/commit/23c20ba | 2023-12-06 16:44:26 |
 | v 1.10.35 | Sami-20s | 29bfc41 | fs | https://github.com/Sami-20s/git-hooks-ex/commit/29bfc41 | 2023-12-06 16:45:40 |
+| v 1.10.36 | Sami-20s | fe10ba5 | fs | https://github.com/Sami-20s/git-hooks-ex/commit/fe10ba5 | 2023-12-06 16:46:34 |
