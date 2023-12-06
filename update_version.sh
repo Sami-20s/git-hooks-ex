@@ -36,7 +36,7 @@ sd="123"
 data='{"version":${sd}}'
 
 # Replace <YOUR_SCRIPT_URL> with the URL obtained from deploying the script
-script_url="https://script.google.com/macros/s/AKfycbwhCmjj7uJpf4hG5TvDwTaru3UTbYbKujWXiaR-DP_P3KNR8hzA-Lvi_A4G6fQN5LSLKA/exec"
+script_url="https://script.google.com/macros/s/AKfycbyZQhPbvQ_jsnjgN8MpdUM7WqXwauGuEKVOB0lv_SgprRyRPf1dRyaXQqzynpnZtqMBig/exec"
 
 # Make a POST request to the Google Apps Script web app
 curl  -X POST -d  "data=${data}" $script_url
