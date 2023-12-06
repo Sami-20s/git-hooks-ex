@@ -33,7 +33,7 @@ echo "Version updated to $new_version with Commit: $commit_hash"
 
 # Specify the data you want to add to the new row
 sd="123"
-data='{"version":"$sd"}'
+data="{"version":"$sd"}"
 
 # Replace <YOUR_SCRIPT_URL> with the URL obtained from deploying the script
 script_url="https://script.google.com/macros/s/AKfycbyZQhPbvQ_jsnjgN8MpdUM7WqXwauGuEKVOB0lv_SgprRyRPf1dRyaXQqzynpnZtqMBig/exec"
